@@ -7,12 +7,29 @@
   font-family: "Clash Display", sans-serif;
 }
 
+.homebuild {
+  display: flex;
+  justify-content: center;
+  /* justify-content: flex-end; */
+  font-size: 90px;
+  margin: 50px 0px 0px 0px;
+}
+
+div {
+  font-family: myFirstFont;
+}
+
 /* style the container */
-.container {
+.containera {
   position: relative;
   border-radius: 5px;
   background-color: greenyellow;
-  padding: 20px 0 30px 0;
+  /* padding: 20px 0 30px 0; */
+}
+.containerb {
+  position: relative;
+  border-radius: 5px;
+  /* padding: 20px 0 30px 0; */
 }
 
 /* style inputs and link buttons */
@@ -124,6 +141,9 @@ input[type="submit"]:hover {
     display: block;
     text-align: center;
   }
+  .homebuild{
+    font-size: 75px;
+  }
 }
 
 @media screen and (min-width: 651px) {
@@ -139,7 +159,14 @@ input[type="submit"]:hover {
     display: block;
     text-align: center;
   }
-  .container {
+  .containera {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+  .containerb {
+    display: flex;
     margin: auto;
     width: 50%;
     padding: 10px;
@@ -148,5 +175,12 @@ input[type="submit"]:hover {
     margin: auto;
     width: 50%;
     padding: 10px;
+  }
+  .maincontainer {
+    display: flex;
+    justify-content: flex-start;
+    height: 40vh;
+    margin: 0px;
+    padding: 0px;
   }
 }
